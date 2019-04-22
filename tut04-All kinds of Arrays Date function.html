@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head><title>All kinds of Arrays</title></head>
+<script type="text/javascript">
+//here we will show how to declare arrays
+/*
+var names=[];
+names[0]="Ladder";
+names[1]="Asif";
+names[2]="Myth";
+alert("Jacob chooses: "+names[0]);
+*/
+//above is the one way of declaring and assigning values to the arrays
+//however we can initialize at arrays directly
+/*
+var names=["Ladder","Asif","Myth"];
+//alert("Jacob chooses: "+names[1]);
+//now we will se a use of loop in array this loop works like foreach loop
+for(i in names){
+alert("Jacob chooses: "+names[i]);//this "i" index will access rach element in the names array, it works like foreach loop
+}
+*/
+//above is the simple example of how for in loop works like foreach loop in php
+var flightDate=new Date("September 22,2004");
+var info=["Oceanic",815,flightDate];
+document.write("Flight Information: ");
+document.write("<br>");
+for(i in info){
+document.write(info[i]);
+document.write("<br>");
+}
+//there is another array called associative array
+//we always access array by index 0,1,2,3,....... but index does not really have to be number it can be names or something else lets see how
+/*
+var cave=[];//here we have declared an array
+cave["Asif"]=3;//we have assigned 3 in "Asif" index
+cave["Jacob"]=6;
+cave["Issac"]=12;
+document.write("Which Cave Asif stays?? Ans: "+cave["Asif"]);
+*/
+</script>
+<body>
+<h1>All kinds of Arrays</h1>
+</body>
+</html>

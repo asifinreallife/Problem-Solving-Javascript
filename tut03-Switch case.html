@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head><title>Switch Case</title></head>
+<script>
+/*var username="Rimmer";
+switch (username){
+case ("Lister"):
+document.write("I am always ready to cook");
+break;
+case ("Rimmer"):
+document.write("I am always ready to eat");
+break;
+case ("Vin"):
+document.write("I am always ready to smash");
+break;
+default:
+document.write("I am always ready to cook");
+break;
+}*/
+var rightNow=new Date();//Date() is a built in javascript function which gives out the date and time of PC
+//we have created a rightNow object of Date() type that's why we have used "new" keywords
+//we have created a variable name rightNow,now we will call the specific function using object oriented method
+//rightNow variable and now we are calling getHours() from Date()
+var currentHour=rightNow.getHours();
+switch (true){//cause currentHour will always be true since we will always get a hour and inside condition will start operating
+case (currentHour>8 && currentHour<12):
+document.write("Morning,Sunshine!");//document.write is a printing function it will print anywhere of the html part we write whether head,body or tag
+break;
+case (currentHour===12):
+document.write("Lunch Time!");
+break;
+case (currentHour===12):
+document.write("Lunch Time!");
+break;
+case (currentHour>12&&currentHour<18):
+document.write("Fight the urge to siesta!");
+break;
+default:
+document.write("Careful Sparky and Slim Shady!");
+break;
+}
+</script
+<body>
+<h1>Switch Case</h1>
+<script>
+//here is the proof that you can write anywhere by document.write() function
+document.write("Holla!");
+</script>
+</body>
+</html>

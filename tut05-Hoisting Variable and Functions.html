@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head><title>Hoisting variable and functions</title></head>
+<script type="text/javascript">
+//when javascript executes code whether it is inside of a function or not, it takes all the variable at the top of the function
+//so whenever it encounters a varible later after executing some code,it gets confused and mark that variable undefined
+//so good practice is we need to declare all the variables at first inside of a function lets see how
+/*
+(function(){
+//no we will declare a variable
+var num=5;
+alert(num);//see it will work perfectly fine
+})();
+*/
+/*
+//above code works exactly fine but what will happen if we declare or even initialize the variable later??!! lets see
+(function(){
+//no we will declare a variable
+var num;
+alert(num);//now it will say undefined
+//cause javascript took out the variable at first and it did not find any value of num cause we have assigned the value later
+//it is called hoisting
+num-5;
+})();
+*/
+//however hoisiting occurs for variable but not for function
+//even if we call a function first and create or define the function later in the code it will perfectly execute
+//lets see how
+//first we will declare an anonymous function and inside that function we will create another function
+//we will fo it to check and call
+(function(){
+print();//we will create the print function later first we will call it and it will still work
+function print(){
+alert("See how funny it is that it still works");
+}
+})();
+//above example worked cause javascript takes the function definition at the top of the compilation not the call
+//so we have the liberty to create and call a function anywhere and we don't need to worry about it
+</script>
+<body>
+<h1>Hoisting variable and functions</h1>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head><title>Variables and Hoisted Variables</title></head>
+<script type="text/javascript">
+/*
+//suppose we declare a varible inside of a block of code and execute that variable outside of that block
+//surprisingly it will still work in javascript,lets see how
+if(true){
+var x=5;//we are assigning 5 into variable x, but we will execute variable x outside of the if block,lets see
+}
+alert(x);//it will still alert x as 5
+*/
+/*
+//we know that there are two types of variable global and local, in javascript we can declare variable anywhere by any name
+//we use var keyword when we declare local variable but in case of global variable we don't have to use var keyword
+//we can change the value of the global variable anywhere,even inside a local function, that is why we call it global so that anyone can access that
+myScope="global";//myScope has bee declared as a global variable
+//now we will declare an anonymous function
+(function(){
+var myScope="local";//we are declaring same myScope but this time as a local variable and it will not affect the code
+//cause javascript will treat local myScope and global myScope differently
+alert("Inside of the function myScope is: "+myScope);
+})();//the last two first brackets are must for anonymous function
+alert("Outside of the function myScope is: "+myScope);
+*/
+/*
+(function(){
+var myScope="This is a local variable";
+alert("Inside of a function: "+myScope); 
+})();
+alert("Outside of a function: "+myScope);//this line of code will not work cause the variable was declared inside of a function
+//so it was a local variable and it will not work outside of the function so the whole alert() will not work because there is an undefined function inside it
+*/
+//we can change the value of a global variable inside of a local function, lets see how's that work
+myScope="global";//it has been declared globally
+/*
+//now we will create an anonymous function and change the value of the myScope global variable
+(function(){
+myScope="myScope has been changed inside of an anonymous function";
+alert("This is myScope inside of a function: "+myScope);
+})();
+alert("This is myScope outside of a function: "+myScope);//initial value has been changed
+*/
+//Document Object Model (DOM) takes the global variable at the first of it's window, global variable gets the priority
+//lets see
+myScope="Top of the window";
+alert('window.myScope: '+window.myScope);//myScope will be at window of DOM
+</script>
+<body>
+<h1>Variables and Hoisted Variables</h1>
+</body>
+</html>
