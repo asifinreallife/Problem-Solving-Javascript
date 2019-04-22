@@ -1,0 +1,3 @@
+document.getElementByID('').value;
+
+here getElementByID('') inside of the quotation what we will give will be pointed for example textbox,submit button etc. and value will grab the value put inside it.

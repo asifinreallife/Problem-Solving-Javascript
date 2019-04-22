@@ -1,0 +1,4 @@
+1.Go to Internet Explorer
+2.Click on the right side of the browser "tools"
+3.Then click on F12 Developer tools
+4.Then on the console you will be able to see everything
