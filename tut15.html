@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>jQuery Plugins</title>
+<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+<!--here we are adding the link to pull out the functionality from the CDN-->
+<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.ui/1.8.17/jquery-ui.min.js"></script>
+<script type="text/javascript" src="js/tut15.js"></script>
+<!--now to add theme we will copy and link a CDN below,the address is saved on the document-->
+<link rel="stylesheet" type="text/css" href="http://ajax.aspnetcdn.com/ajax/jquery.ui/1.8.17/themes/eggplant/jquery-ui.css"/> 
+  <!--
+  <script src="http://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="http://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  -->
+<!-- -->
+</head>
+<body>
+<h1>jQuery Plugins</h1>
+<!-- I have copied this code from the API documentation of jquery option api documentation->tabs->widgets-->
+<div id="tabs">
+  <ul>
+    <li><a href="#fragment-1"><span>One</span></a></li>
+    <li><a href="#fragment-2"><span>Two</span></a></li>
+    <li><a href="#fragment-3"><span>Three</span></a></li>
+  </ul>
+  <div id="fragment-1">
+    <p>First tab is active by default:</p>
+    <pre><code>$( "#tabs" ).tabs(); </code></pre>
+  </div>
+  <div id="fragment-2">
+    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+  </div>
+  <div id="fragment-3">
+    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+  </div>
+<div id="datepicker"></div>
+</body>
+</html>
