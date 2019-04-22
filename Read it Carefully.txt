@@ -1,0 +1,3 @@
+most of the times we use javascript code inside of the HTML or inside of the HTML tag. It is not a good practice cause we need to keep our HTML files clean so that we can reuse it again and again.
+
+That is the reason we will write HTML code in one file and Javascript code in seprate files lets see how
