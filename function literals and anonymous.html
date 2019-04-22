@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head><title>JavaScript Example</title></head>
+<script type="text/javascript">
+//by function lierals we understand that we can create a function inside of a variable and then we can use that variable to invoke that function
+//lets see
+/*var addme=function(){//look this function don't have a name but it is created inside of the variable addme,now we will use add me
+var myVal=arguments[0]+arguments[1];//since every function has its own array and we can access it by arguments
+return myVal;
+}
+var result=addme(100,200);//see we have basically called a varible with two arguments
+alert(result);*/
+//above is the example of the function literals
+//above code can be written like this too
+var addme=((function(){
+return (arguments[0]+arguments[1]);//it will return the value to addme variable
+})(100,200));
+alert(addme);//now it will work like same
+
+//Anonymous functions are those who don't have a name suppose above function is one kind of anonymous function which did not have any name itself
+//however the variable had a name,now lets create a function which has no name at all
+//now we will call alert function and inside that we will create a function whose values will be printed but that function won't have any name
+
+/*alert((function(){//a function is created inside alert function whose job is to just return a value which alert will print
+return arguments[0]+arguments[1];
+})(500,600));//we have passed the arguments here
+*/
+</script>
+<body>
+<h1>JavaScript Example</h1>
+</body>
+</html>

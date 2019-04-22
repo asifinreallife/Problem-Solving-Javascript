@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head><title>Unlimited Arguments</title></head>
+<script type="text/javascript">
+//here we will see that we can send unlimited arguments to a function without declaring or mentioning
+
+function add(){
+var myValue=0;
+for(i=0;i<arguments.length;i++){//arguments is a built in created array like element which auto stores passed down arguments inside it
+//length auto calculates the length 
+//arguments is totally an array
+myValue+=arguments[i];
+}
+alert(myValue);
+}
+</script>
+<body>
+<h1>Unlimited Arguments</h1>
+<input type="submit" value="Click me" onclick="add(10,20,30,40)"/>
+<!--after clicking the my add dunctions will be called and passed down those arguments but look at add we haven't defined anything in argument section-->
+</body>
+</html>
