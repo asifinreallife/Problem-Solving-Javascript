@@ -1,0 +1,5 @@
+what is object literals??!!
+
+in javascript the concept of the object is little bit vague. it does not use object as the same way other object oriented laguage does.
+
+what happens inside the object literal is we declare a variable and inside that varibale we declare properties(other variables) and methods(function) and later we can access it outside creating other variables or using the same name of the literals using "." operator. this "." operator is member accessing operator.
